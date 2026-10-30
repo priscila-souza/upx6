@@ -1,0 +1,440 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+h1, h2, h3, h4, h5, span{
+
+    font-family: 'Oulza', sans-serif;
+    text-transform: none;
+}
+
+span{
+
+    color: #6A0DAD;
+}
+
+section{
+
+    margin: 0 auto;
+    padding: 4em;
+}
+
+p{
+
+    padding: .5em;
+    font-size: 1.2em;
+}
+
+body{
+
+    background:#f8f4ff;
+    color:#333;
+    font-family: 'Montserrat', sans-serif;
+}
+
+header{
+
+    background: #9564DD;
+    padding: 1.5em;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav{
+
+    font-weight: 500;
+    letter-spacing: 1px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+}
+
+nav h2{
+
+    color:#fefefe;
+}
+
+nav ul{
+
+    display: flex;
+    gap: 1em;
+    list-style: none;
+    font-family: 'Montserrat', sans-serif;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+}
+
+.hero{
+    height: 100vh;
+    position                : relative;
+    background-image: url(./testemedio.png);
+    background-repeat: no-repeat;
+    background-position: 85%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #fefefe;
+    z-index: 0;
+}
+
+.hero::before{
+    content             : '';
+    position            : absolute;
+    width               : 100%;
+    height              : 100%;
+    top                 : 0;
+    left                : 0;
+    background: linear-gradient(rgba(106, 13, 173, 50%), rgba(180, 120, 255, 10%));
+    z-index: 1;
+}
+
+.hero-content{
+
+    max-width:700px;
+    z-index: 1;
+    margin: 0 6em;
+}
+
+.hero h1{
+
+    font-size: 4rem;
+    font-family: 'Oulza', sans-serif;
+    padding: .5em;
+}
+
+.hero h1 span{
+
+    color: #6A0DAD;
+    font-family: 'Oulza', sans-serif;
+}
+
+.hero p{
+
+    padding: 1em;
+    font-size: 1.3em;
+}
+
+.btn{
+    
+    display: inline-block;
+    margin-top: 20px;
+    padding: 1em 2em;
+    background-color:#6A0DAD;
+    color: #fefefe;
+    border-radius: 13px;
+    text-decoration: none;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.btn:hover{
+
+    background-color: #a855f7;
+}
+
+#sobre p{
+
+    font-size: 1.2em;
+    line-height: 1.3em;
+    color: #fefefe;
+}
+
+.section h2{
+
+    text-align: center;
+    margin-bottom: 1.3em;
+    color: #6A0DAD;
+    font-size: 3em;
+}
+
+.upx6Sobre{
+
+    background-color: rgba(149, 100, 221, 80%);
+    padding: 2em;
+    border-radius: 0 13px;
+    max-width: 60%;
+    margin: 0 auto;
+}
+
+.bg-light{
+
+    background:#efe6ff;
+}
+
+.cards{
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    gap: 25px;
+    max-width: 60%;
+    margin: 0 auto;
+}
+
+.card{
+    background:white;
+    padding:25px;
+    border-radius:20px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
+
+.card h3{
+
+    font-size: 1.5em;
+    padding-bottom: .5em;
+    color: #000;
+}
+
+.card p{
+
+    color: #666;
+}
+
+/* .destaque{
+    border:3px solid #a855f7;
+} */
+
+.upx6Info{
+
+    display: flex;
+    gap: 5em;
+    max-width: 60%;
+    margin: 0 auto;
+}
+
+.info-box{
+
+    background:#fefefe;
+    padding: 2em 4em;
+    border-radius: 13px;
+}
+
+.info-box ul{
+    line-height:2;
+}
+
+
+.ajuda{
+
+    background-color:#6A0DAD;
+    color:#fefefe;
+    padding: 2em 4em;
+    border-radius: 13px;
+}
+
+.ajuda h3{
+
+    font-size: 1.5em;
+    margin-bottom: .5em;
+}
+
+.quiz-container{
+    max-width:700px;
+    margin:auto;
+}
+
+.question{
+    background:white;
+    padding:25px;
+    border-radius:20px;
+    margin-bottom:20px;
+}
+
+.question button{
+
+    display: block;
+    width: 100%;
+    margin-top: 1em;
+    padding: 1em 3em;
+    border: none;
+    background: #a855f7;
+    color: #fefefe;
+    border-radius: 13px;
+    cursor: pointer;
+}
+
+.question button:hover{
+
+    background: #6A0DAD;
+}
+
+footer{
+
+    font-family: 'Oulza', sans-serif;
+    background: #9564DD;
+    color: #fefefe;
+    text-align: center;
+    padding: 3em;
+    font-size: 1em;
+}
+
+footer .upx6FooterFonteNormal{
+
+    font-family: 'Montserrat', sans-serif;
+    color: #fefefe;
+}
+
+footer a{
+
+    text-decoration: none;
+    color: #fefefe;
+}
+
+footer p{
+
+    font-size: 1.2em;
+}
+
+@media only screen and (max-width: 1024px) {
+
+    .upx6Info {
+        gap: 1.5rem;
+    }
+
+    .hero-content {
+        margin: 0 auto;
+        text-align: center;
+        background-color: rgba(0, 0, 0, 15%);
+        padding: 1em;
+        border-radius: 13px;
+    }
+
+    .hero h1 {
+        font-size: 3rem;
+    }
+
+    .upx6Info{
+
+        max-width: 90%;
+    }
+}
+
+
+@media only screen and (max-width: 768px) {
+
+    section {
+        padding: 3rem 1rem;
+    }
+
+
+    .menu-icon {
+        display: block;
+    }
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: #834ec9;
+        padding: 1.5rem;
+        text-align: center;
+        box-shadow: 0 5px 10px rgba(0,0,0,0.15);
+    }
+
+    .menu-toggle:checked ~ ul {
+        display: flex;
+    }
+
+    .hero-content{
+
+        background-color: initial;
+        padding: 0;
+        border-radius: 0;
+    }
+
+    .hero {
+        min-height: 75vh;
+        padding: 3rem 1rem;
+        background-image: none;
+    }
+
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero p {
+        font-size: 1.1rem;
+    }
+    
+    .upx6Sobre{
+
+        max-width: 80%;
+    }
+
+    .cards{
+
+        max-width: 80%;
+    }
+
+    .upx6Info {
+        flex-direction: column;
+        max-width: 80%;
+    }
+
+    .info-box, .ajuda {
+        padding: 2em;
+    }
+}
+
+
+@media only screen and (max-width: 480px) {
+
+    nav h2 {
+        font-size: 1.4rem;
+    }
+
+    .section h2 {
+        font-size: 2rem;
+    }
+
+    .hero{
+
+        background-image: none;
+    }
+
+    .hero h1 {
+        font-size: 2.1rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .upx6Sobre {
+        padding: 1.5rem;
+        max-width: 80%;
+    }
+
+    #sobre p {
+        font-size: 1rem;
+    }
+
+    .upx6Info{
+
+        max-width: 80%;
+    }
+
+    .card {
+        padding: 1.2rem;
+    }
+
+    .cards{
+
+        max-width: 80%;
+    }
+
+    .btn {
+        width: 80%;
+        text-align: center;
+    }
+}
