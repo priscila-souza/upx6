@@ -235,35 +235,6 @@ nav a{
     margin-bottom: .5em;
 }
 
-.quiz-container{
-    max-width:700px;
-    margin:auto;
-}
-
-.question{
-    background:white;
-    padding:25px;
-    border-radius:20px;
-    margin-bottom:20px;
-}
-
-.question button{
-
-    display: block;
-    width: 100%;
-    margin-top: 1em;
-    padding: 1em 3em;
-    border: none;
-    background: #a855f7;
-    color: #fefefe;
-    border-radius: 13px;
-    cursor: pointer;
-}
-
-.question button:hover{
-
-    background: #6A0DAD;
-}
 
 footer{
 
